@@ -19,7 +19,6 @@ apt install -qqy --no-install-recommends \
     iptables \
     libconfig9 \
     locales \
-    modemmanager \
     netcat-traditional \
     net-tools \
     network-manager \
