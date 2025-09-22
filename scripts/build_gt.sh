@@ -5,7 +5,7 @@ SRCDIR=$(pwd)/src
 
 # install gt dependencies
 chroot ${CHROOT} qemu-aarch64-static /bin/sh \
-    -c " apt update; apt install libconfig-dev -y"
+    -c " apt update; apt install libconfig-dev libstdc++6 -y"
 
 # build and install gt
 (
