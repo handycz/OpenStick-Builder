@@ -27,6 +27,7 @@ apt install -qqy --no-install-recommends \
     openssh-server \
     qrtr-tools \
     rmtfs \
+    socat \
     sudo \
     systemd-timesyncd \
     tzdata \

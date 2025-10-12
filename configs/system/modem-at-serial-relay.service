@@ -1,0 +1,12 @@
+[Unit]
+Description=Relays primary modem AT commands to USB gadget
+Requires=sys-kernel-config.mount
+After=sys-kernel-config.mount usb-gadget.service msm-firmware-loader.service
+
+[Service]
+ExecStartPre=sleep 5
+ExecStart=/usr/bin/socat /dev/ttyGS0,raw,echo=0,crnl /dev/wwan0at0,raw,echo=0,crnl
+Type=exec
+
+[Install]
+WantedBy=multi-user.target
