@@ -19,6 +19,7 @@ apt install -qqy --no-install-recommends \
     iptables \
     libconfig11 \
     locales \
+    minicom \
     netcat-traditional \
     net-tools \
     network-manager \
