@@ -5,7 +5,7 @@ After=sys-kernel-config.mount
 
 [Service]
 ExecStartPre=/usr/sbin/modprobe libcomposite
-ExecStart=/usr/bin/gt load rndis-os-desc.scheme rndis
+ExecStart=/usr/bin/gt load serial-and-ethernet.scheme rndis
 RemainAfterExit=yes
 ExecStop=/usr/bin/gt rm -rf rndis
 Type=simple
