@@ -28,6 +28,7 @@ apt install -qqy --no-install-recommends \
     sudo \
     systemd-timesyncd \
     tzdata \
+    vim \
     wireguard-tools \
     wpasupplicant
 apt clean
