@@ -54,6 +54,9 @@ cat << EOF > ${CHROOT}/etc/udev/rules.d/99-nm-usb0.rules
 SUBSYSTEM=="net", ACTION=="add|change|move", ENV{DEVTYPE}=="gadget", ENV{NM_UNMANAGED}="0"
 EOF
 
+# install sysctl configuration
+cp configs/sysctl.conf ${CHROOT}/etc/
+
 # install kernel
 wget -O - http://mirror.postmarketos.org/postmarketos/v24.06/aarch64/linux-postmarketos-qcom-msm8916-6.6-r5.apk \
     | tar xkzf - -C ${CHROOT} --exclude=.PKGINFO --exclude=.SIGN* 2>/dev/null
