@@ -24,7 +24,7 @@ strings = (
         lang = 0x409;
         manufacturer = "Foo Inc.";
         product = "LTE Modem";
-        serialnumber = "0123456789";
+        serialnumber = "#serial-number-placeholder#";
     } );
 
 functions: 

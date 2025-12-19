@@ -4,6 +4,7 @@ Requires=sys-kernel-config.mount
 After=sys-kernel-config.mount
 
 [Service]
+ExecStartPre=-/usr/sbin/initialize-usb-gadget-serial-number.sh
 ExecStartPre=/usr/sbin/modprobe libcomposite
 ExecStart=/usr/bin/gt load serial-and-ethernet.scheme rndis
 RemainAfterExit=yes

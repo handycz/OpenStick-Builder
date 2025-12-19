@@ -44,6 +44,8 @@ cp -a configs/system/* ${CHROOT}/etc/systemd/system
 
 cp -a scripts/msm-firmware-loader.sh ${CHROOT}/usr/sbin
 
+cp -a scripts/initialize-usb-gadget-serial-number.sh ${CHROOT}/usr/sbin
+
 # setup NetworkManager
 cp configs/*.nmconnection ${CHROOT}/etc/NetworkManager/system-connections
 chmod 0600 ${CHROOT}/etc/NetworkManager/system-connections/*
