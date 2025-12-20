@@ -57,7 +57,7 @@ SUBSYSTEM=="net", ACTION=="add|change|move", ENV{DEVTYPE}=="gadget", ENV{NM_UNMA
 EOF
 
 # install sysctl configuration
-cp configs/sysctl.conf ${CHROOT}/etc/
+cp -r configs/sysctl.d/ ${CHROOT}/etc/
 
 # install kernel
 wget -O - http://mirror.postmarketos.org/postmarketos/v24.06/aarch64/linux-postmarketos-qcom-msm8916-6.6-r5.apk \
